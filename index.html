@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bevery — Play and create</title>
+  <meta name="description" content="Bevery is a place to play community games, build a 3D avatar, hang out with friends, and publish games of your own. Download 0.7.0 for Windows, Linux, or Android." />
+  <meta name="theme-color" content="#123b2e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- The same three typefaces the desktop and mobile app use. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d45a3f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 11h4'/%3E%3Cpath d='M8 9v4'/%3E%3Cpath d='M15 12h.01'/%3E%3Cpath d='M18 10h.01'/%3E%3Cpath d='M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-row">
+      <a class="brand" href="#top" aria-label="Bevery home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/>
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/>
+          </svg>
+        </span>
+        <span class="brand-word">bevery</span>
+        <span class="brand-beta">beta</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#whats-new">What's new</a>
+        <a href="#download">Download</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <a class="button button-coral nav-cta" href="#download">Get Bevery</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Bevery 0.7.0 · public beta</p>
+          <h1>Games made by players, for players.</h1>
+          <p class="lede">
+            Play community-made games, dress up a 3D avatar, hang out with friends,
+            and publish games of your own. One account, one app — now on Windows,
+            Linux, and Android.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-coral button-lg" id="heroDownload" href="#download">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+              <span data-dl-label>Download Bevery</span>
+            </a>
+            <a class="button button-outline button-lg" href="#features">
+              See what's inside
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+          <ul class="hero-meta" role="list">
+            <li>Windows</li>
+            <li>Linux</li>
+            <li>Android</li>
+            <li>Free to play</li>
+          </ul>
+          <p class="hero-security">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            0.7.0 is an important security update. Recommended for every install.
+          </p>
+        </div>
+
+        <div class="hero-shot" aria-hidden="true">
+          <span class="hero-sticker"><strong>0.7.0</strong>security update</span>
+          <div class="app-window">
+            <div class="win-top">
+              <span class="win-brand">
+                <span class="win-mark">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/></svg>
+                </span>
+                bevery
+              </span>
+              <span class="win-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                Search games, players, studio
+                <kbd>/</kbd>
+              </span>
+              <span class="win-actions">
+                <span class="win-coin"><i>B</i> 1,240</span>
+                <span class="win-avatar">M</span>
+                <span class="win-controls"><i></i><i></i><i></i></span>
+              </span>
+            </div>
+            <div class="win-body">
+              <div class="win-sidebar">
+                <p class="win-label">Discover</p>
+                <span class="win-item is-active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/></svg>
+                  Games
+                </span>
+                <span class="win-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  Friends
+                </span>
+                <span class="win-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Studio
+                </span>
+                <p class="win-label win-label-gap">Account</p>
+                <span class="win-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+                  Shop
+                </span>
+                <span class="win-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                  Avatar
+                </span>
+                <div class="win-promo">
+                  <strong>Make something</strong>
+                  <span>Publish a game in an afternoon.</span>
+                </div>
+              </div>
+              <div class="win-main">
+                <div class="win-heading">
+                  <span class="win-eyebrow">From the community</span>
+                  <strong>Games</strong>
+                </div>
+                <div class="win-grid">
+                  <div class="win-card">
+                    <div class="win-cover cover-0"><span class="win-letter">S</span><span class="win-tag">Arcade</span><span class="win-play">Play</span></div>
+                    <strong>Sky Hopper</strong>
+                    <span>1.2k playing</span>
+                  </div>
+                  <div class="win-card">
+                    <div class="win-cover cover-1"><span class="win-letter">R</span><span class="win-tag">Racing</span><span class="win-play">Play</span></div>
+                    <strong>Redline</strong>
+                    <span>864 playing</span>
+                  </div>
+                  <div class="win-card">
+                    <div class="win-cover cover-2"><span class="win-letter">M</span><span class="win-tag">Puzzle</span><span class="win-play">Play</span></div>
+                    <strong>Mono Maze</strong>
+                    <span>512 playing</span>
+                  </div>
+                  <div class="win-card">
+                    <div class="win-cover cover-3"><span class="win-letter">D</span><span class="win-tag">Adventure</span><span class="win-play">Play</span></div>
+                    <strong>Dust &amp; Gold</strong>
+                    <span>397 playing</span>
+                  </div>
+                  <div class="win-card">
+                    <div class="win-cover cover-4"><span class="win-letter">P</span><span class="win-tag">Party</span><span class="win-play">Play</span></div>
+                    <strong>Paper Planes</strong>
+                    <span>288 playing</span>
+                  </div>
+                  <div class="win-card">
+                    <div class="win-cover cover-5"><span class="win-letter">T</span><span class="win-tag">Tycoon</span><span class="win-play">Play</span></div>
+                    <strong>Tin Town</strong>
+                    <span>201 playing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What is inside</p>
+            <h2>Everything lives in one app</h2>
+          </div>
+          <p class="section-copy">
+            The website is for getting Bevery. The app is where the games,
+            the people, and the workshop live.
+          </p>
+        </div>
+        <div class="features-grid">
+          <article class="feature accent-coral">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </span>
+            <h3>Play in a click</h3>
+            <p>Games open in their own play window the moment you press play. No per-game installs, no waiting around.</p>
+          </article>
+          <article class="feature accent-gold">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <h3>Publish your own</h3>
+            <p>Write a game in HTML, CSS, and JavaScript, upload one file, and everyone on Bevery can play it.</p>
+          </article>
+          <article class="feature accent-pine">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+            </span>
+            <h3>Make your avatar</h3>
+            <p>Build a 3D look from hair, hats, shirts, and faces. Your avatar follows you everywhere on Bevery.</p>
+          </article>
+          <article class="feature accent-sky">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>Play with friends</h3>
+            <p>Find players by username, send friend requests, and keep up with what your friends are playing.</p>
+          </article>
+          <article class="feature accent-gold">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.5a3.5 3.5 0 0 0-3-1.5c-1.7 0-3 1-3 2s1 1.7 3 2 3 1 3 2-1.3 2-3 2a3.5 3.5 0 0 1-3-1.5"/><path d="M12 6v12"/></svg>
+            </span>
+            <h3>Earn and spend coins</h3>
+            <p>Earn coins while you play, then spend them in the shop on new looks for your avatar.</p>
+          </article>
+          <article class="feature accent-coral">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>Security that keeps up</h3>
+            <p>A hardened game sandbox, protected accounts, and a security-focused 0.7.0 release that everyone should install.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Getting started</p>
+            <h2>Three steps to play</h2>
+          </div>
+          <p class="section-copy">No launcher maze, no separate accounts. Grab a build and you are in.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step">
+            <span class="step-num" aria-hidden="true">01</span>
+            <p class="step-label">Step one</p>
+            <h3>Pick your platform</h3>
+            <p>Download the Windows, Linux, or Android build below. Every installer lives on this page.</p>
+          </div>
+          <div class="step">
+            <span class="step-num" aria-hidden="true">02</span>
+            <p class="step-label">Step two</p>
+            <h3>Create your account</h3>
+            <p>Sign up with an email, pick a username, and get a starter avatar right away.</p>
+          </div>
+          <div class="step">
+            <span class="step-num" aria-hidden="true">03</span>
+            <p class="step-label">Step three</p>
+            <h3>Play and build</h3>
+            <p>Jump into community games, earn coins, and publish something of your own when you are ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section whats-new" id="whats-new">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Release notes</p>
+            <h2>What's new in 0.7.0</h2>
+          </div>
+          <p class="section-copy">A smaller, steadier update with a serious security pass under the hood.</p>
+        </div>
+        <div class="news-grid">
+          <aside class="release-card">
+            <p class="eyebrow">Latest release</p>
+            <p class="release-version">0.7.0</p>
+            <span class="release-status">Beta</span>
+            <p class="release-date">24 October 2026<br />Windows · Linux · Android</p>
+            <p class="release-note">Update over your existing install. Your account, games, friends, and coins stay put.</p>
+          </aside>
+          <div class="notes">
+            <article class="note">
+              <span class="note-tag tag-coral">Security</span>
+              <div>
+                <h3>Install this one</h3>
+                <p>Important hardening, updated dependencies, and stricter validation around account and game data. Every existing installation should update.</p>
+              </div>
+            </article>
+            <article class="note">
+              <span class="note-tag tag-gold">Interface</span>
+              <div>
+                <h3>A cleaner fit</h3>
+                <p>Improved text sizes and spacing, a more compact rank panel, better mobile navigation, and refined buttons, focus states, and tap feedback.</p>
+              </div>
+            </article>
+            <article class="note">
+              <span class="note-tag tag-pine">Desktop</span>
+              <div>
+                <h3>Steadier on desktop</h3>
+                <p>Updated Windows and Linux builds, fixed desktop networking, corrected game stats permissions, and removed noisy startup errors.</p>
+              </div>
+            </article>
+            <article class="note">
+              <span class="note-tag tag-sky">Mobile &amp; fixes</span>
+              <div>
+                <h3>Better on phones</h3>
+                <p>Updated Android build with larger touch targets, no input zoom, smoother scrolling and modals. Game uploads also grew from 5 MB to 10 MB.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download" id="download">
+      <div class="container">
+        <div class="download-panel">
+          <div class="download-head">
+            <div>
+              <p class="eyebrow">Download</p>
+              <h2>Get Bevery 0.7.0</h2>
+              <p>One account, three platforms. Pick the build for the device you are on — every download is served from this page.</p>
+            </div>
+            <span class="release-stamp">Latest<strong>0.7.0</strong>beta</span>
+          </div>
+
+          <div class="platform-grid">
+            <article class="platform-card" data-platform="windows" aria-labelledby="platform-windows">
+              <span class="platform-badge" data-rec hidden>Your platform</span>
+              <div class="platform-head">
+                <span class="platform-icon icon-win" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10.5 4.6v6.9H3zM11.5 4.5 21 3.2v8.3h-9.5zM3 12.5h7.5v6.9L3 18.5zM11.5 12.5H21v8.3l-9.5-1.3z"/></svg>
+                </span>
+                <div>
+                  <h3 id="platform-windows">Windows</h3>
+                  <p>Windows 10 / 11 · x64</p>
+                </div>
+              </div>
+              <a class="button button-coral platform-download" href="downloads/Bevery_0.7.0_x64-setup.exe" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                Download for Windows
+              </a>
+              <div class="platform-meta">
+                <span><em>Installer</em><strong>.exe · 53.2 MB</strong></span>
+                <span><em>Version</em><strong>0.7.0</strong></span>
+              </div>
+            </article>
+
+            <article class="platform-card" data-platform="linux" aria-labelledby="platform-linux">
+              <span class="platform-badge" data-rec hidden>Your platform</span>
+              <div class="platform-head">
+                <span class="platform-icon icon-linux" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                </span>
+                <div>
+                  <h3 id="platform-linux">Linux</h3>
+                  <p>Ubuntu 22.04+ · x64</p>
+                </div>
+              </div>
+              <a class="button button-coral platform-download" href="downloads/Bevery-0.7.0-x86_64.AppImage" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                Download AppImage
+              </a>
+              <div class="platform-meta">
+                <span><em>AppImage</em><strong>138.0 MB</strong></span>
+                <span><em>Version</em><strong>0.7.0</strong></span>
+              </div>
+              <p class="platform-extra">
+                Prefer not to use FUSE? Grab the <a href="downloads/Bevery-0.7.0-linux-x64.tar.gz" download>portable tarball</a> (136.1 MB).
+              </p>
+            </article>
+
+            <article class="platform-card" data-platform="android" aria-labelledby="platform-android">
+              <span class="platform-badge" data-rec hidden>Your platform</span>
+              <div class="platform-head">
+                <span class="platform-icon icon-android" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11a6 6 0 0 1 12 0v5a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"/><path d="m8.5 5.5-1.5-2.5"/><path d="m15.5 5.5 1.5-2.5"/><circle cx="9.5" cy="8.5" r=".6" fill="currentColor"/><circle cx="14.5" cy="8.5" r=".6" fill="currentColor"/><path d="M10 19v2"/><path d="M14 19v2"/></svg>
+                </span>
+                <div>
+                  <h3 id="platform-android">Android</h3>
+                  <p>Android 7.0+ · public beta</p>
+                </div>
+              </div>
+              <a class="button button-coral platform-download" href="downloads/bevery-mobile-public-beta.apk" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                Download APK
+              </a>
+              <div class="platform-meta">
+                <span><em>APK</em><strong>5.1 MB</strong></span>
+                <span><em>Version</em><strong>0.7.0</strong></span>
+              </div>
+              <p class="platform-extra">Allow installs from your browser when prompted. This is a public beta build.</p>
+            </article>
+          </div>
+
+          <div class="download-foot">
+            <p class="download-note">
+              macOS is not available yet. Only download Bevery from this page — 0.7.0 contains an
+              important security update, and older installers should not be used.
+            </p>
+            <details class="checksums">
+              <summary>Verify your download</summary>
+              <div class="checksum-list">
+                <span class="checksum"><strong>Bevery_0.7.0_x64-setup.exe</strong><code>EFDA91F789141D337A2AA6CB390025E4254977D61EA9EC3F38608DA54938A695</code></span>
+                <span class="checksum"><strong>Bevery-0.7.0-x86_64.AppImage</strong><code>96A7D58074269481C6F9B7E867C27C85CC3D6DD7F00B9285FA982DA046EDE8FE</code></span>
+                <span class="checksum"><strong>Bevery-0.7.0-linux-x64.tar.gz</strong><code>E74462CFDAA35052F7A29CE185EA4815859651B95FF526DD1BFBCDD6F37C4457</code></span>
+                <span class="checksum"><strong>bevery-mobile-public-beta.apk</strong><code>D2E6F9978A5A8138B091AB24B38CF5315298A16C24E1D53759C7892D5FACE965</code></span>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <a class="footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/>
+              <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/>
+            </svg>
+          </span>
+          bevery
+        </a>
+        <p class="footer-tagline">Games, avatars, and a place to make things. Built for players and creators.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#whats-new">What's new</a>
+        <a href="#download">Download</a>
+        <a href="mailto:hey@bevery.app">Contact</a>
+      </nav>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Bevery · Version 0.7.0</span>
+        <span>Windows · Linux · Android · Free to play</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
